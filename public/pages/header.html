@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #navbar {
+            /* position: -webkit-sticky; */
+            overflow: hidden;
+            z-index: 1000;
+            background-color: white !important;
+
+        }   
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar" class="header   flex align-center justify-center gap-40 pt-4 pb-5  w-100%">
+        <img src="../Farmkart-Logo.svg" alt="">
+
+        <ul class="flex gap-20 align-center justify-center pt-4">
+            <li><a href="./Home.html" class="text-gray-600 text-xl hover:text-zinc-950 font-bold">Home</a></li>
+            <li><a class="text-gray-600 text-xl hover:text-zinc-950 font-bold" href="./About.html">About Us</a></li>
+            <li><a class="text-gray-600 text-xl hover:text-zinc-950 font-bold" href="./Products.html">Products</a></li>
+            <li><a class="text-gray-600 text-xl hover:text-zinc-950 font-bold" href="./Contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="buttons flex gap-2">
+
+            <button class="border-2 border-black px-4 py-2 rounded-md text-sm font-medium text-white bg-black">
+                Sign Up
+            </button>
+            <button class="border-2 border-black px-4 py-2 rounded-md text-sm font-medium text-white bg-black">
+                Log in
+            </button>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
