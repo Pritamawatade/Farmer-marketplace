@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- A web design for Farmkart showcasing innovative solutions for Indian farmers with modern technologies. -->
+<!DOCTYPE html >
+<html lang="en" class="overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8">
@@ -15,77 +16,12 @@
 
     <style>
 
-        .herocontent{
-            font-weight: 600;
-        }
-        span{
-            color: green;
-            text-decoration: underline;
-        }
-        .h4text {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            /* Dark shadow */
-            background-color: rgba(11, 196, 253, 0.875);
-            /* Black background with 50% opacity */
-            padding: 10px;
-            border-radius: 5px;
-
-        }
-        .h4text1 {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            /* Dark shadow */
-            background-color: rgba(255, 255, 255, 0.875);
-            /* Black background with 50% opacity */
-            padding: 10px;
-            border-radius: 5px;
-
-        }
-
-        h3 {
-            line-break: normal;
-        }
-
-        .img1 {
-            height: 500px;
-            width: 607px;
-            border: 0.2px solid white;
-            border-radius: 80px;
-            margin-bottom: 40px;
-        }
-
+     
         h1 {
-            font-size: 70px !important;
             font-family: "Noto Serif", serif;
-            font-weight: bolder;
         }
 
-        .img2>img {
-            height: 400px;
-            width: 400px;
-        }
-
-        .img3>img {
-            height: 374px;
-            width: 497px;
-            /* border: 1px solid black; */
-            border-radius: 10px;
-        }
-
-        .img2>img {
-            height: 400px;
-            width: 400px;
-        }
-
-        .hero2text {
-            font-size: 20px;
-
-        }
-
-        .hero4text>h4 {
-            font-size: 20px;
-            font-weight: bolder;
-            /* height: 3px; */
-        }
+     
     </style>
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -95,21 +31,25 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
-<body>
+<body class="min-h-full overflow-x-hidden w-screen">
 
-    <div id="header"></div>
-    <div class="herosection flex items-center justify-around mt-20 ">
+
+    <?php 
+    include 'header.html';
+    ?>
+   
+    <div class="herosection  sm:flex items-center justify-around  ">
         <div class="herocontent text-center align-center">
-            <h1 class=" ">NO <span class="italic">#1</span> CHOICE OF <br> INDIAN FARMERS </h1>
+            <h1 class="md:text-7xl sm:text-2xl text-2xl">NO <span class="text-green-700 underline">#1</span> CHOICE OF <br> INDIAN FARMERS </h1>
         </div>
         <div class="heroimg ">
-            <img class="transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl object-contain img1  hover:ease-in-out hover:scale-110 "
+            <img class="h-96 mb-5 rounded transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl object-contain img1  hover:ease-in-out  "
                 src="https://farmkartgroup.com/wp-content/uploads/2024/02/Cultivating-innovation-acre-by-acre-01-1536x1024.jpg"
                 alt="Hero image">
         </div>
     </div>
 
-    <div class="hero2 p-20 flex items-center  gap-40 justify-around bg-gradient-to-r from-sky-500  to-green-500 ">
+    <div class="hero2 p-20  sm:flex items-center  gap-40 justify-around bg-gradient-to-r from-sky-500  to-green-500 ">
         <div class="hero2text">
             <h2 class="bg-green-600 pb-2 rounded text-3xl text-center font-bold capitalize ">Transforming farming with
                 <br> technological innovation
@@ -119,14 +59,14 @@
                 taking it beyond.</h4>
         </div>
         <div class="img2">
-            <img class="transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl"
+            <img class=" h-96 w-auto transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl"
                 src="https://farmkartgroup.com/wp-content/uploads/2020/11/digital-farmkart.png" alt="Tech image">
         </div>
     </div>
 
-    <div class="hero3 p-20 flex items-center  gap-40 justify-around bg-cyan-700">
+    <div class="hero3 p-20  sm:flex items-center  gap-40 justify-around bg-cyan-700">
         <div class="img3">
-            <img class="transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl"
+            <img class="h-96 transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl"
                 src="https://farmkartgroup.com/wp-content/uploads/2021/03/reinventing-agriculture-2.jpg"
                 alt="Tech image">
         </div>
@@ -140,10 +80,10 @@
             </h4>
         </div>
     </div>
-    <div class="hero4 p-20 flex items-center  gap-40 justify-around bg-cyan-700">
+    <div class="hero4 p-20  sm:flex items-center  gap-40 justify-around bg-cyan-700">
         <div class="hero4text h4text">
-            <h1>Designing A smarter future of farming</h1>
-            <h4 class="font-2xl pl-20 h4text1 ">We’re paving the way for a better farming experience <br> in India by
+            <h1 class="font-bold text-2xl bg-sky-600">Designing A smarter future of farming</h1>
+            <h4 class="text-black-700 font-2xl font-medium ">We’re paving the way for a better farming experience <br> in India by
                 democratizing access to modern <br> agricultural inputs. We want to provide <br> every farmer in the
                 country <br>with leading products and <br>game-changing pioneering technologies.</h4>
         </div>
@@ -156,8 +96,8 @@
     <div class="about">
         <h1 class="text-center capitalize">What do we offer ?</h1>
 
-        <div class="hero5 flex align-center justify-center">
-            <img class="h-96 w-2/5"
+        <div class="hero5  sm:flex align-center justify-center">
+            <img class="h-96 w-96"
                 src="https://farmkartgroup.com/wp-content/uploads/2020/08/farmkart-superstore-1024x514.png"
                 alt="Farmkart">
 
@@ -173,22 +113,11 @@
         </div>
     </div>
 
-    <div id="footer"></div>
-    <script>
+    
+    <?php 
+    include 'footer.html';
+    ?>
 
-
-        $(document).ready(function () {
-            $(function () {
-                $("#header").load("header.html");
-            });
-        });
-
-        $(document).ready(function () {
-            $(function () {
-                $("#footer").load("footer.html");
-            });
-        });
-    </script>
 
     <script>
         gsap.from('.heroimg', { x: 150, duration: 1 });

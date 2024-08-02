@@ -14,8 +14,8 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         .herosection {
             position: relative;
@@ -24,7 +24,6 @@
         }
         #heading{
             position: absolute;
-            font-size: 7rem;
             text-transform: uppercase;
             font-family: 'Bebas Neue';
             clip-path: polygon( 0, 100% 0, 100% 100%, 0% 100%);
@@ -37,22 +36,10 @@
     border-radius: 5px;
 
         }
-/* 
-        h1{
-
-            font-size: 7ren;
-            text-transform: uppercase;
-            font-family: 'Bebas Neue';
-            clip-path: polygon( 0, 100% 0, 100% 100%, 0% 100%);
-            /* line-height: 5.9rem;
-            position: relative; */
-         */
-
         .char {
 
             transform: translateY (115px);
             transition: transform .55;
-
         }
 
         .img1 {
@@ -62,63 +49,65 @@
             border-radius: 80px;
             margin-bottom: 40px;
         }
-        
     </style>
 </head>
 
-<body>
+<body class="bg-white">
 
-    <div id="header"></div>
+
+<?php 
+    include 'header.html';
+    ?>
     <div class="aboutuspage">
 
         <div class="herosection flex items-center justify-around  ">
                 <img class="object-cover h-screen w-screen" src="download.png" alt="">
-                <h1 id="heading" class="text">We help to give farmer freedom</h1>
+                <h1 id="heading" class=" text md:text-7xl text-xl sm:text-4xl">We help to give farmer freedom</h1>
         </div>
 
-        <div class="hero2 p-20 flex items-center  gap-40 justify-around bg-gradient-to-r from-sky-500  to-green-500 ">
-            <div class="hero2text">
+        <div class="hero2 p-20 md:flex items-center  gap-40 justify-around bg-gradient-to-r from-sky-500  to-green-500 ">
+            <div class="hero2text mt-3">
                 <h2 class="bg-green-600 pb-2 rounded text-3xl text-center font-bold capitalize ">Transforming farming
                     with
-                    <br> technological innovation
+                      technological innovation
                 </h2>
-                <h4 class="font-medium">We design innovative solutions to transform traditional <br> agricultural
+                <h4 class="font-medium">We design innovative solutions to transform traditional   agricultural
                     methods.
-                    We’re advancing one of the world’s <br> oldest professions, bringing it into <br> the 21st century
+                    We’re advancing one of the world’s   oldest professions, bringing it into   the 21st century
                     and
                     taking it beyond.</h4>
             </div>
-            <div class="img2">
+            <div class="img2 mt-3">
                 <img class="transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl"
                     src="https://farmkartgroup.com/wp-content/uploads/2020/11/digital-farmkart.png" alt="Tech image">
             </div>
         </div>
 
-        <div class="hero3 p-20 flex items-center  gap-40 justify-around bg-cyan-700">
-            <div class="img3">
-                <img class="transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl"
+        <div class="hero3 p-20 md:flex items-center  gap-40 justify-around bg-cyan-700">
+            <div class="img3 mt-3">
+                <img class="transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl "
                     src="https://farmkartgroup.com/wp-content/uploads/2021/03/reinventing-agriculture-2.jpg"
                     alt="Tech image">
             </div>
-            <div class="hero3text  ">
+            <div class="hero3text  mt-3">
                 <h2 class="bg-green-600 pb-2 rounded text-3xl text-center font-bold capitalize ">
-                    Reinventing agriculture <br>
+                    Reinventing agriculture  
                     for A better tomorrow</h2>
-                <h4 class="text-black-700 font-2xl font-medium ">At Farmkart, we want to drive innovation, make <br> an
-                    impact and become an inspiration. We are improving the <br> daily lives of farmers in India,
+                <h4 class="text-black-700 font-2xl font-medium ">At Farmkart, we want to drive innovation, make   an
+                    impact and become an inspiration. We are improving the   daily lives of farmers in India,
                     allowing
-                    <br> them to be more productive, efficient, and progressive.
+                      them to be more productive, efficient, and progressive.
                 </h4>
             </div>
         </div>
-        <div class="hero4 p-20 flex items-center  gap-40 justify-around bg-cyan-700">
-            <div class="hero4text">
+        <div class="hero4 p-20 md:flex items-center  gap-40 justify-around bg-cyan-700">
+            <div class="hero4text mt-3">
                 <h1>Designing A smarter future of farming</h1>
-                <h4 class="font-2xl ">We’re paving the way for a better farming experience <br> in India by
-                    democratizing access to modern <br> agricultural inputs. We want to provide <br> every farmer in the
-                    country <br>with leading products and <br>game-changing pioneering technologies.</h4>
+                <h4 class="font-2xl ">We’re paving the way for a better farming experience   in India by
+                    democratizing access to modern   agricultural inputs. We want to provide   every farmer in the
+                    country  with leading products and  game-changing pioneering technologies.</h4>
             </div>
-            <div class="img4">
+            <div class="img4 mt-3">
                 <img class="transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl h-60  w-96"
                     src="https://farmkartgroup.com/wp-content/uploads/2020/12/Agrinidan-1024x652.png" alt="Tech image">
             </div>
@@ -127,62 +116,38 @@
         <div class="about">
             <h1 class="text-center capitalize">What do we offer ?</h1>
 
-            <div class="hero5 flex align-center justify-center">
-                <img class="h-96 w-2/5"
+            <div class="hero5 md:flex align-center justify-center">
+                <img class="h-96 w-96 mt-3"
                     src="https://farmkartgroup.com/wp-content/uploads/2020/08/farmkart-superstore-1024x514.png"
                     alt="Farmkart">
 
                 <div class="hero5text text-center  mt-4 ">
                     <h2 class="font-medium text-3xl ">E-Commerce platform</h2>
-                    <br>
+                     
                     <h3 class="text-xl text-gray-600">
-                        A comprehensive one-stop online <br>shopping platform for agriculture <br> products and services
-                        built especially for <br>farmers in rural India, offering <br>superior customer experience.
+                        A comprehensive one-stop online  shopping platform for agriculture   products and services
+                        built especially for  farmers in rural India, offering  superior customer experience.
                     </h3>
                 </div>
 
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
     </div>
-    <div id="footer"></div>
-    <script>
 
-        $(document).ready(function () {
-            $(function () {
-                $("#header").load("header.html");
-            });
-        });
+    <?php 
+    include 'footer.html';
+    ?>
 
-        $(document).ready(function () {
-            $(function () {
-                $("#footer").load("footer.html");
-            });
-        });
-
-    </script>
 <script>
     const split = new SplitType(".text");
 
-    // gsap.set sets properties on our items
     gsap.set(split.chars, {
         transformOrigin: "center center",
         y: 100,
         opacity: 0
     });
 
-    // gsap.to triggers animations
     gsap.to(split.chars, {
         y: 0,
         opacity: 1,

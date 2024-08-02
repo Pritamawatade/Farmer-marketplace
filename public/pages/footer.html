@@ -4,63 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Footer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    
-    <div class="bg-gray-700 flex items-center justify-center gap-30 ">
-        <div class="footerlinks">
-            <div class="links m-20 ">
-                <a class="text-cyan-600 text-xl hover:text-white font-bold" href="Home.html">Home</a> <br>
-                <a  class="text-cyan-600 text-xl hover:text-white font-bold" href="Products.html">Products</a> <br>
-                <a class="text-cyan-600 text-xl hover:text-white font-bold" href="About.html">About</a> <br>
-                <a class="text-cyan-600 text-xl hover:text-white font-bold" href="Contact.html">Contact</a> <br>
-            
+<body class="bg-gray-800 text-white font-serif">
+    <footer class="bg-gray-700 p-8">
+        <div class="flex flex-col md:flex-row md:justify-between items-center gap-8">
+            <div class="footerlinks flex flex-col md:flex-row md:flex-wrap gap-4">
+                <div class="links flex flex-col md:flex-row md:gap-4">
+                    <a class="text-white text-xl hover:text-white font-bold m-2" href="Home.html">Home</a>
+                    <a class="text-white text-xl hover:text-white font-bold m-2" href="Products.html">Products</a>
+                    <a class="text-white text-xl hover:text-white font-bold m-2" href="About.html">About</a>
+                    <a class="text-white text-xl hover:text-white font-bold m-2" href="Contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="scocials text-center">
+                <p>© 2024 Farmkart.</p>
+                <ul class="flex justify-center items-center gap-4 mt-4">
+                    <li>
+                        <a class="hover:scale-110 transition-transform duration-300"
+                            href="https://www.linkedin.com/in/pritam-awatade-411b27252/" target="_blank" rel="noopener">
+                            <svg class="w-8 h-8 transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.78 24 1.77 24h20.45c.99 0 1.78-.77 1.78-1.72V1.72C24 .77 23.21 0 22.23 0zM7.12 20.45H3.54V9h3.58v11.45zm-1.79-13.2a2.06 2.06 0 1 1 0-4.11 2.06 2.06 0 0 1 0 4.11zm14.24 13.2h-3.58v-5.99c0-1.43-.02-3.26-1.99-3.26-1.99 0-2.3 1.55-2.3 3.15v6.1h-3.58V9h3.44v1.56h.05c.48-.91 1.66-1.87 3.42-1.87 3.66 0 4.34 2.41 4.34 5.56v6.2z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:scale-110 transition-transform duration-300"
+                            href="https://www.facebook.com/farmkartofficial/" target="_blank" rel="noopener">
+                            <svg class="w-8 h-8 transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.67 0H1.33C.6 0 0 .6 0 1.33v21.33C0 23.4.6 24 1.33 24h11.49v-9.33H9.54v-3.64h3.28V8.89c0-3.26 1.99-5.04 4.9-5.04 1.4 0 2.6.1 2.95.15v3.43h-2.02c-1.58 0-1.88.75-1.88 1.85v2.43h3.76l-.49 3.64h-3.27V24h6.4c.73 0 1.33-.6 1.33-1.33V1.33C24 .6 23.4 0 22.67 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:scale-110 transition-transform duration-300" href="https://x.com/Pritam_Awatade"
+                            target="_blank" rel="noopener">
+                            <svg class="h-10 w-10 bg-white rounded-full transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:scale-110 transition-transform duration-300"
+                            href="https://github.com/pritamawatade" target="_blank" rel="noopener">
+                            <img class="h-10 w-10 bg-white rounded-full transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl"
+                                src="icons8-github-1--unscreen.gif" alt="GitHub">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="scocials text-white ">
-            © 2024 Farmkart.
-            <br>
-            <ul class="flex items-center gap-4 justify-center">
-
-                <li><a class="hover-fade-out" href="https://www.facebook.com/farmkartofficial/" target="_blank"
-                        rel="noopener"><svg class="transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl" version="1.1" height="24" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12 24"
-                            style="enable-background:new 0 0 12 24;" xml:space="preserve">
-                            <path class="st0" d="M7.8,24V13h3.5l0.5-4.3H7.8V6.1c0-1.2,0.3-2.1,2-2.1L12,4V0.2C11.6,0.1,10.3,0,8.8,0C5.7,0,3.5,2,3.5,5.6v3.1H0
-                            V13h3.5V24L7.8,24z"></path>
-                        </svg></a>
-                </li>
-
-
-                <svg class="transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="40" viewBox="0 0 50 50">
-                    <path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z"></path>
-                    </svg>
-
-
-                <li><a class="hover-fade-out" href="https://twitter.com/farmkart" target="_blank" rel="noopener"><svg class="transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="50" viewBox="0,0,256,256" style="fill:#000000;">
-                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5.91992,6l14.66211,21.375l-14.35156,16.625h3.17969l12.57617,-14.57812l10,14.57813h12.01367l-15.31836,-22.33008l13.51758,-15.66992h-3.16992l-11.75391,13.61719l-9.3418,-13.61719zM9.7168,8h7.16406l23.32227,34h-7.16406z"></path></g></g>
-                    </svg></a>
-                </li>
-
-
-                <a target="_blank" href="https://github.com/pritamawatade">
-
-                    <img class=" h-20 transform transition duration-500 hover:scale-110 shadow:lg hover:shadow-2xl" src="github.png" alt="">
-                </a>
-                    
-                
-            </ul>
-        </div>
-    </div>
+    </footer>
 </body>
 
 </html>

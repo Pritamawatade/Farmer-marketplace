@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+
     <style>
         #navbar {
             /* position: -webkit-sticky; */
@@ -13,7 +14,7 @@
             z-index: 1000;
             background-color: white !important;
 
-        }   
+        }
 
         .sticky {
             position: fixed;
@@ -28,37 +29,36 @@
 </head>
 
 <body>
-    <div id="navbar" class="header   flex align-center justify-center gap-40 pt-4 pb-5  w-100%">
-        <img src="../Farmkart-Logo.svg" alt="">
+    <div id="navbar" class="header flex items-center justify-between p-4 w-full">
+        <img class="w-10 sm:w-40" src="../Farmkart-Logo.svg" alt="">
 
-        <ul class="flex gap-20 align-center justify-center pt-4">
-            <li><a href="./Home.html" class="text-gray-600 text-xl hover:text-zinc-950 font-bold">Home</a></li>
+        <ul id="menu" class="hidden md:flex md:gap-10 items-center w-fit  md:w-auto">
+            <li><a class="text-gray-600 text-xl hover:text-zinc-950 font-bold" href="./Home.html">Home</a></li>
             <li><a class="text-gray-600 text-xl hover:text-zinc-950 font-bold" href="./About.html">About Us</a></li>
             <li><a class="text-gray-600 text-xl hover:text-zinc-950 font-bold" href="./Products.html">Products</a></li>
             <li><a class="text-gray-600 text-xl hover:text-zinc-950 font-bold" href="./Contact.html">Contact Us</a></li>
+            <li><a class="text-gray-600 text-xl hover:text-zinc-950 font-bold" href="./Login.html">Log In</a></li>
+            <li><a class="text-gray-600 text-xl hover:text-zinc-950 font-bold" href="./Signup.html">Sign Up</a></li>
         </ul>
 
-        <div class="buttons flex gap-2">
-
-            <button class="border-2 border-black px-4 py-2 rounded-md text-sm font-medium text-white bg-black">
-                Sign Up
-            </button>
-            <button class="border-2 border-black px-4 py-2 rounded-md text-sm font-medium text-white bg-black">
-                Log in
-            </button>
-        </div>
+        <button id="menuToggle"
+            class="md:hidden border-2 border-black px-4 py-2 rounded-md text-sm font-medium text-white bg-black">
+            Menu
+        </button>
     </div>
 
     <script>
+        document.getElementById("menuToggle").addEventListener("click", function () {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+        });
+
         window.onscroll = function () { myFunction() };
 
-        // Get the navbar
         var navbar = document.getElementById("navbar");
 
-        // Get the offset position of the navbar
         var sticky = navbar.offsetTop;
 
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
         function myFunction() {
             if (window.pageYOffset >= sticky) {
                 navbar.classList.add("sticky")
@@ -67,7 +67,6 @@
             }
         }
     </script>
-
 </body>
 
 </html>
